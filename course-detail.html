@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">未来代码院线</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-blue-600 transition">首页</a>
+                <a href="course-list.html" class="text-blue-600 font-medium">课程列表</a>
+                <a href="#" class="hover:text-blue-600 transition">活动</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="cart.html" class="hover:text-blue-600">购物车</a>
+                <a href="login.html" class="px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition">登录</a>
+                <a href="user-center.html" class="hidden md:block w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
+                    <img src="images/头像.jpg" alt="Avatar" class="w-full h-full object-cover">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-16 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+            <div class="w-full md:w-1/2 lg:w-2/5">
+                <img src="images/vue3+ts.png" alt="课程封面" class="w-full rounded-lg shadow-lg">
+            </div>
+            <div class="w-full md:w-1/2 lg:w-3/5 flex flex-col">
+                <h1 class="text-2xl md:text-3xl font-bold mb-4">Vue3 + TS 全栈开发实战课程</h1>
+                <p class="text-gray-500 mb-6 flex-grow">本课程从零开始讲解Vue3核心原理，配合TypeScript进行企业级项目实战...</p>
+                <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                    <div class="text-3xl font-bold text-red-500 mb-1">¥ 199.00</div>
+                    <div class="text-sm text-gray-500">累计销量: 1,234 | 评分: 4.9</div>
+                </div>
+                <div class="flex gap-4">
+                    <a href="cart.html" class="flex-1 bg-blue-100 text-blue-600 py-3 rounded-lg text-center font-bold hover:bg-blue-200 transition">加入购物车</a>
+                    <a href="buy.html" class="flex-1 bg-blue-600 text-white py-3 rounded-lg text-center font-bold hover:bg-blue-700 transition">立即购买</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-xl font-bold mb-4 border-b pb-2">课程介绍</h2>
+                <div class="space-y-4 text-gray-600 leading-relaxed">
+                    <p>这里是课程的详细图文介绍区域...</p>
+                    <img src="images/vue3课程简介.png" alt="课程介绍图片" class="w-full rounded">
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-xl font-bold mb-4 border-b pb-2">课程大纲</h2>
+                <div class="space-y-2">
+                    <details class="group border rounded-lg" open>
+                        <summary class="flex justify-between items-center cursor-pointer p-4 bg-gray-50 font-medium hover:bg-gray-100">
+                            <span>第一章：课程导学</span>
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="p-4 space-y-2 border-t">
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <span>1-1 课程简介与学习指南</span>
+                                <a href="video-play.html?course=vue3-ts&chapter=1-1" class="text-blue-600 hover:underline">免费试看</a>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <span>1-2 环境搭建</span>
+                                <span>10:20</span>
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details class="group border rounded-lg">
+                        <summary class="flex justify-between items-center cursor-pointer p-4 bg-gray-50 font-medium hover:bg-gray-100">
+                            <span>第二章：Vue3 基础语法</span>
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="p-4 border-t text-sm text-gray-500">
+                            请购买后查看本章内容
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-1">
+            <div class="bg-white p-6 rounded-lg shadow sticky top-20">
+                <h3 class="font-bold mb-4">讲师介绍</h3>
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="images/vue讲师头像.jpg" alt="讲师头像" class="w-16 h-16 rounded-full" >
+                    <div>
+                        <div class="font-bold">张三</div>
+                        <div class="text-xs text-gray-500">资深前端架构师</div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">拥有10年大厂开发经验，擅长Vue/React生态及Node.js服务端开发。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

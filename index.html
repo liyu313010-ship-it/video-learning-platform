@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 在线视频学习平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">未来代码院线</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-blue-600 font-medium">首页</a>
+                <a href="course-list.html" class="hover:text-blue-600 transition">课程列表</a>
+                <a href="#" class="hover:text-blue-600 transition">活动</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="cart.html" class="hover:text-blue-600">购物车</a>
+                <a href="login.html" class="px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition">登录</a>
+                <a href="user-center.html" class="hidden md:block w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
+                    <img src="images/头像.jpg" alt="Avatar">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-16 w-full h-[300px] md:h-[400px] bg-gray-200 relative">
+        <img src="images/横幅.jpg" class="w-full h-full object-cover" alt="课程封面">
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+            <h1 class="text-3xl md:text-5xl text-white font-bold">开启你的学习之旅</h1>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 border-l-4 border-blue-600 pl-3">课程分类</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <a href="course-list.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center hover:text-blue-600 transition">前端开发</a>
+                <a href="course-list.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center hover:text-blue-600 transition">后端架构</a>
+                <a href="course-list.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center hover:text-blue-600 transition">人工智能</a>
+                <a href="course-list.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center hover:text-blue-600 transition">产品设计</a>
+                <a href="course-list.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center hover:text-blue-600 transition">移动开发</a>
+                <a href="course-list.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center hover:text-blue-600 transition">更多...</a>
+            </div>
+        </div>
+
+        <div class="mb-10">
+            <div class="flex justify-between items-end mb-4">
+                <h2 class="text-2xl font-bold border-l-4 border-blue-600 pl-3">热门推荐</h2>
+                <a href="course-list.html" class="text-gray-500 hover:text-blue-600 text-sm">查看全部 ></a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                <a href="course-detail.html" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="images/vue3+ts.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="课程封面">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 truncate">Vue3 + TS 全栈开发实战</h3>
+                        <div class="flex justify-between items-center text-sm mb-2">
+                            <span class="text-gray-500">讲师: vue讲师</span>
+                            <span class="text-gray-400">销量: 1.2k</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-lg">¥ 199.00</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="course-detail-python.html" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-gray-200"><img src="images/python.jpg" alt="课程封面" class="w-full h-full object-cover"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 truncate">Python 从入门到实践</h3>
+                        <div class="flex justify-between items-center text-sm mb-2">
+                            <span class="text-gray-500">讲师: python讲师</span>
+                            <span class="text-gray-400">销量: 800</span>
+                        </div>
+                        <span class="text-red-500 font-bold text-lg">¥ 99.00</span>
+                    </div>
+                </a>
+                
+                <a href="course-detail-ui-ux.html" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-gray-200"><img src="images/ui_ux.png" alt="课程封面" class="w-full h-full object-cover"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 truncate">UI/UX 设计系统课</h3>
+                        <div class="flex justify-between items-center text-sm mb-2">
+                            <span class="text-gray-500">讲师: ui讲师</span>
+                            <span class="text-gray-400">销量: 2.1k</span>
+                        </div>
+                        <span class="text-red-500 font-bold text-lg">¥ 299.00</span>
+                    </div>
+                </a>
+
+                <a href="course-detail-docker.html" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-gray-200"><img src="images/docker.jpg" alt="课程封面" class="w-full h-full object-cover"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 truncate">Docker 容器化部署</h3>
+                        <div class="flex justify-between items-center text-sm mb-2">
+                            <span class="text-gray-500">讲师: docker讲师</span>
+                            <span class="text-gray-400">销量: 560</span>
+                        </div>
+                        <span class="text-red-500 font-bold text-lg">¥ 159.00</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-blue-50 rounded-xl p-8 mb-8">
+            <h2 class="text-center text-2xl font-bold mb-8">为什么选择我们</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow text-2xl">📚</div>
+                    <h3 class="font-bold mb-2">海量课程</h3>
+                    <p class="text-gray-600 text-sm">涵盖 IT、设计、职场等多领域</p>
+                </div>
+                <div>
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow text-2xl">⚡</div>
+                    <h3 class="font-bold mb-2">极速更新</h3>
+                    <p class="text-gray-600 text-sm">紧跟技术潮流，每周更新</p>
+                </div>
+                <div>
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow text-2xl">🎓</div>
+                    <h3 class="font-bold mb-2">名师指导</h3>
+                    <p class="text-gray-600 text-sm">一线大厂专家亲自授课</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

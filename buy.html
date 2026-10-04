@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>确认订单 - 在线视频学习平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 pb-20">
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">未来代码院线</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-blue-600 transition">首页</a>
+                <a href="course-list.html" class="hover:text-blue-600 transition">课程列表</a>
+                <a href="#" class="hover:text-blue-600 transition">活动</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="cart.html" class="hover:text-blue-600">购物车</a>
+                <a href="login.html" class="px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition">登录</a>
+                <a href="user-center.html" class="hidden md:block w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
+                    <img src="images/头像.jpg" alt="Avatar" class="w-full h-full object-cover">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4 max-w-4xl mt-16">
+        <div class="bg-white p-6 rounded-lg shadow mb-6">
+            <h3 class="font-bold text-lg mb-4">1. 课程信息</h3>
+            <div class="flex gap-4 items-center bg-gray-50 p-4 rounded">
+                <img src="https://placehold.co/100x60" alt="课程封面预览" class="rounded">
+                <div>
+                    <div class="font-bold">Vue3 全栈开发实战</div>
+                    <div class="text-red-500 font-bold">¥ 199.00</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow mb-6">
+            <h3 class="font-bold text-lg mb-4">2. 支付方式</h3>
+            <div class="flex gap-4">
+                <label class="border-2 border-blue-600 bg-blue-50 px-4 py-2 rounded cursor-pointer flex items-center gap-2">
+                    <input type="radio" name="pay" checked class="accent-blue-600"> 
+                    <span>微信支付</span>
+                </label>
+                <label class="border px-4 py-2 rounded cursor-pointer flex items-center gap-2">
+                    <input type="radio" name="pay" class="accent-blue-600"> 
+                    <span>支付宝</span>
+                </label>
+            </div>
+        </div>
+
+        <button class="w-full bg-blue-600 text-white py-4 rounded-lg text-xl font-bold shadow-lg hover:bg-blue-700 transition">
+            立即支付 ¥ 199.00
+        </button>
+    </div>
+</body>
+</html>

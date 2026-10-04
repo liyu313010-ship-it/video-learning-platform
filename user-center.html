@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 在线视频学习平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">未来代码院线</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-blue-600 transition">首页</a>
+                <a href="course-list.html" class="hover:text-blue-600 transition">课程列表</a>
+                <a href="#" class="hover:text-blue-600 transition">活动</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="cart.html" class="hover:text-blue-600">购物车</a>
+                <a href="index.html" class="text-sm text-gray-500">退出登录</a>
+                <a href="user-center.html" class="hidden md:block w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
+                    <img src="images/头像.jpg" alt="Avatar" class="w-full h-full object-cover">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4 mt-16 flex flex-col md:flex-row gap-6">
+        <aside class="w-full md:w-64 bg-white rounded-lg shadow p-4 h-fit">
+            <div class="text-center mb-6">
+                <img src="images/头像.jpg" alt="用户头像" class="w-20 h-20 rounded-full mx-auto mb-2">
+                <div class="font-bold">李雨</div>
+            </div>
+            <ul class="space-y-1">
+                <li class="bg-blue-50 text-blue-600 p-2 rounded cursor-pointer font-medium">我的课程</li>
+                <li class="hover:bg-gray-50 p-2 rounded cursor-pointer">我的订单</li>
+                <li class="hover:bg-gray-50 p-2 rounded cursor-pointer">收藏夹</li>
+                <li class="hover:bg-gray-50 p-2 rounded cursor-pointer">个人设置</li>
+            </ul>
+        </aside>
+        <main class="flex-1 bg-white rounded-lg shadow p-6 min-h-[500px]">
+            <h2 class="text-xl font-bold mb-6 pb-2 border-b">我的课程</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="border rounded-lg overflow-hidden">
+                    <div class="h-32 bg-gray-200 relative">
+                        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-xs p-1">学习进度: 30%</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-sm truncate mb-2">Vue3 + TS 全栈开发</h3>
+                        <a href="video-play.html" class="block text-center bg-blue-600 text-white text-sm py-1 rounded hover:bg-blue-700">继续学习</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
